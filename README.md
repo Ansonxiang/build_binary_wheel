@@ -26,7 +26,15 @@ example:
     --python-bin /home/ansonxiang/miniconda3/envs/py312/bin/python \
     --wheel-name txs_mf_stat \
     --version 0.1.1 \
-    --output-dir /home/ansonxiang/git/TXS_MF_Stat/dist        
+    --output-dir /home/ansonxiang/git/TXS_MF_Stat/dist   
+
+ python build_binary_wheel.py \
+    --project-root /home/ansonxiang/git/TXS_Layer \
+    --packages txs_layer \
+    --python-bin /home/ansonxiang/miniconda3/envs/py312/bin/python \
+    --wheel-name txs_layer \
+    --version 0.1.1 \
+    --output-dir /home/ansonxiang/git/TXS_Layer/dist   
 
  python build_binary_wheel.py \
     --project-root /home/ansonxiang/git/spec_layer/ \
@@ -45,4 +53,18 @@ example:
     --output-dir /home/ansonxiang/git/spec_db/dist        
 
 
-    /home/ansonxiang/git/TXS_MF_Stat/txs_mf_stat
+ python build_binary_wheel.py \
+    --project-root /home/ansonxiang/git/TXS_Optimizer/ \
+    --packages txs_optimizer \
+    --python-bin /home/ansonxiang/miniconda3/envs/py312/bin/python \
+    --wheel-name txs_optimizer \
+    --version 0.1.1 \
+    --output-dir /home/ansonxiang/git/TXS_Optimizer/dist    
+
+ python build_binary_wheel.py \
+    --project-root /home/ansonxiang/git/heuristic_style_classify \
+    --packages heuristic_style_classifier \
+    --python-bin /home/ansonxiang/miniconda3/envs/py312/bin/python \
+    --wheel-name heuristic_style_classifier \
+    --version 0.1.1 \
+    --output-dir /home/ansonxiang/git/heuristic_style_classify/dist   
